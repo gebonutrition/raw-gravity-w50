@@ -191,7 +191,6 @@
       z-index: 2;
 
       max-width: 560px;
-      min-height: inherit;
 
       display: flex;
       flex-direction: column;
@@ -234,7 +233,7 @@
 
     .rg-hero h1 {
       font:
-        500 clamp(38px, 4.6vw, 60px)/1.12
+        500 clamp(38px, 2.6vw, 51px)/1.12
         "Cormorant Garamond", serif;
 
       margin: 0 0 20px;
@@ -249,8 +248,8 @@
 
     .rg-hero__subtitle {
       font:
-        400 clamp(17px, 1.6vw, 20px)/1.55
-        "Work Sans", sans-serif;
+      400 clamp(15px, 1vw, 17px)/1.55
+      "Work Sans", sans-serif;
 
       color: #463F37;
       margin: 0 0 30px;
@@ -279,6 +278,7 @@
       align-items: center;
       gap: 14px;
       flex-wrap: wrap;
+      margin-bottom: 14px;
     }
 
     .rg-trust__avatars {
@@ -318,6 +318,11 @@
 
     .rg-trust__text strong {
       color: #211D1A;
+    }
+    @media (min-width: 641px) {
+      .rg-hero__price-label {
+        display: none;
+      }
     }
 
     /* --------------------------------
@@ -1632,7 +1637,11 @@
       <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start;background:rgba(255,255,255,0.7);border:1px solid rgba(124,133,96,0.35);border-radius:18px;padding:16px 20px;margin-bottom:22px;max-width:420px;width:100%">
 
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-          <span style="font:700 14px/1.2 'Work Sans',sans-serif;color:#211D1A">
+          <span style="font:700 10.5px/1 'Work Sans',sans-serif;letter-spacing:0.14em;color:#fff;background:#C6532A;border-radius:999px;padding:6px 10px">
+            LIMITED
+          </span>
+
+          <span class="rg-hero__price-label" style="font:700 14px/1.2 'Work Sans',sans-serif;color:#211D1A">
             Limited low price
           </span>
         </div>
