@@ -913,7 +913,7 @@
         500 clamp(26px, 3.2vw, 38px)/1.2
         "Cormorant Garamond", serif;
 
-      margin: 0 0 12px;
+      margin: 0 0 20px;
       color: #211D1A;
     }
 
@@ -924,6 +924,81 @@
 
       color: #463F37;
       margin: 0 0 30px;
+    }
+
+    .rg-email__price-card {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(124, 133, 96, 0.35);
+      border-radius: 18px;
+
+      padding: 16px 20px;
+      margin: 0 auto 24px;
+
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .rg-email__price-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .rg-email__price-badge {
+      display: none;
+
+      font: 700 10.5px/1 "Work Sans", sans-serif;
+      letter-spacing: 0.14em;
+
+      color: #FFFFFF;
+      background: #C6532A;
+      border-radius: 999px;
+      padding: 6px 10px;
+    }
+
+    .rg-email__price-label {
+      font: 700 14px/1.2 "Work Sans", sans-serif;
+      color: #211D1A;
+    }
+
+    .rg-email__price-line {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .rg-email__price-current {
+      font: 600 34px/1 "Cormorant Garamond", serif;
+      color: #211D1A;
+    }
+
+    .rg-email__price-old {
+      font: 400 16px/1 "Work Sans", sans-serif;
+      color: #7A7064;
+      text-decoration: line-through;
+    }
+
+    .rg-email__price-discount {
+      font: 700 13px/1 "Work Sans", sans-serif;
+      color: #C6532A;
+      background: rgba(232, 118, 63, 0.12);
+      border-radius: 999px;
+      padding: 6px 10px;
+    }
+
+    .rg-email__price-note {
+      font: 400 13px/1.4 "Work Sans", sans-serif;
+      color: #5B5347;
+      text-align: center;
     }
 
     .rg-email form {
@@ -1577,6 +1652,23 @@
 
       .rg-email h2 {
         font-size: 28px;
+      }
+
+      .rg-email__price-card {
+        align-items: flex-start;
+      }
+
+      .rg-email__price-top,
+      .rg-email__price-line {
+        justify-content: flex-start;
+      }
+
+      .rg-email__price-badge {
+        display: inline-flex;
+      }
+
+      .rg-email__price-note {
+        text-align: left;
       }
 
       .rg-email__offer {
@@ -2293,14 +2385,45 @@
       <div id="email-form-state">
 
         <h2>
-          Try it for 30 days
-          <br>
-          Your gut will tell you thank you
+          Get -48% on your first order
         </h2>
+        <!-- EMAIL OFFER PRICE CARD -->
+        <div class="rg-email__price-card">
 
-        <p class="rg-email__offer">
-          25% off your first order.
-        </p>
+          <div class="rg-email__price-top">
+
+            <span class="rg-email__price-badge">
+              LIMITED
+            </span>
+
+            <span class="rg-email__price-label">
+              Limited low price
+            </span>
+
+          </div>
+
+          <div class="rg-email__price-line">
+
+            <span class="rg-email__price-current">
+              $19.70
+            </span>
+
+            <span class="rg-email__price-old">
+              $37.70
+            </span>
+
+            <span class="rg-email__price-discount">
+              -48%
+            </span>
+
+          </div>
+
+          <div class="rg-email__price-note">
+            Lowest price ever · Goes up after the next 100 orders
+          </div>
+
+        </div>
+        <!-- END EMAIL OFFER PRICE CARD -->
 
         <form id="lead-form">
 
@@ -2316,7 +2439,7 @@
             id="email-submit"
             type="submit"
           >
-            Get my 25% code →
+            Get my discount →
           </button>
 
         </form>
@@ -2339,7 +2462,7 @@
         </p>
 
         <p class="rg-success__code">
-          RAW25
+          RAW48
         </p>
 
         <a

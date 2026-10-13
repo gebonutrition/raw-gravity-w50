@@ -89,7 +89,7 @@ if (!form || !emailInput || !submitButton || !emailFormState || !successState) {
       console.error("Klaviyo submission error:", error);
 
       submitButton.disabled = false;
-      submitButton.textContent = "Get my 25% code →";
+      submitButton.textContent = "Get my discount →";
 
       alert("Something went wrong. Please try again.");
     }
