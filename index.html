@@ -667,6 +667,57 @@
       max-width: 520px;
     }
 
+    .rg-repeat-cta__price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .rg-repeat-cta__price-line {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .rg-repeat-cta__price-badge {
+      font: 700 10.5px/1 "Work Sans", sans-serif;
+      letter-spacing: 0.14em;
+      color: #FFFFFF;
+      background: #C6532A;
+      border-radius: 999px;
+      padding: 6px 10px;
+      align-self: center;
+    }
+
+    .rg-repeat-cta__price-current {
+      font: 600 40px/1 "Cormorant Garamond", serif;
+      color: #FFFFFF;
+    }
+
+    .rg-repeat-cta__price-old {
+      font: 400 18px/1 "Work Sans", sans-serif;
+      color: #F6F0E6;
+      text-decoration: line-through;
+    }
+
+    .rg-repeat-cta__price-discount {
+      font: 700 13px/1 "Work Sans", sans-serif;
+      color: #211D1A;
+      background: #F6F0E6;
+      border-radius: 999px;
+      padding: 6px 10px;
+      align-self: center;
+    }
+
+    .rg-repeat-cta__price-note {
+      font: 400 14px/1.4 "Work Sans", sans-serif;
+      color: #F6F0E6;
+      text-align: center;
+    }
+
     .rg-repeat-cta .rg-amazon-btn {
       margin-top: 8px;
       box-shadow: 0 10px 24px rgba(0,0,0,0.3);
@@ -1430,6 +1481,18 @@
         font-size: 22px;
       }
 
+      .rg-repeat-cta__price-current {
+        font-size: 36px;
+      }
+
+      .rg-repeat-cta__price-old {
+        font-size: 16px;
+      }
+
+      .rg-repeat-cta__price-note {
+        max-width: 320px;
+      }
+
       .rg-repeat-cta .rg-amazon-btn {
         width: 100%;
         min-height: 52px;
@@ -1999,6 +2062,36 @@
       <p class="rg-repeat-cta__text">
         The coffee your gut has been waiting for.
       </p>
+      
+      <!-- REPEAT CTA PRICE -->
+      <div class="rg-repeat-cta__price">
+
+        <div class="rg-repeat-cta__price-line">
+
+          <span class="rg-repeat-cta__price-badge">
+            LIMITED
+          </span>
+
+          <span class="rg-repeat-cta__price-current">
+            $19.70
+          </span>
+
+          <span class="rg-repeat-cta__price-old">
+            $37.70
+          </span>
+
+          <span class="rg-repeat-cta__price-discount">
+            -48%
+          </span>
+
+        </div>
+
+        <div class="rg-repeat-cta__price-note">
+          Lowest price ever · Goes up after the next 100 orders
+        </div>
+
+      </div>
+      <!-- END REPEAT CTA PRICE -->
 
       <a href="#email-form" class="rg-amazon-btn">
 
@@ -2007,7 +2100,7 @@
         </span>
 
         <span class="rg-amazon-btn__action">
-          Buy Now on Amazon -25%
+          Buy Now on Amazon -48%
         </span>
 
       </a>
@@ -2261,7 +2354,7 @@
           </span>
 
           <span class="rg-amazon-btn__action">
-            Buy Now on Amazon -25%
+            Buy Now on Amazon -48%
           </span>
 
         </a>
@@ -2346,7 +2439,7 @@
             </span>
 
             <span class="rg-amazon-btn__action">
-              Buy Now on Amazon -25%
+              Buy Now on Amazon -48%
             </span>
 
           </a>
